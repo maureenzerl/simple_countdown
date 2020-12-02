@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'countdown';
+  myVar:boolean=false
+  ngOnInit()
+  {
+
+  }
+  AppComponent.countdownresume()
+  {
+    this.myVar=!this.myVar
+  }
 }
