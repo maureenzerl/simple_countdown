@@ -1,36 +1,8 @@
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<style>
-  body{
-    background-color: darkturquoise;
-  }
-  .button {
-  background-color: blanchedalmond;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.8;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-}
-.button:hover {opacity: 1}
-</style>
-
-<body>
-  <div ng-app="hi" style="text-align: center;" ng-controller="ha">
+<div style="text-align: center;background-color: aqua; height: auto;">
+  <div style="margin: auto; padding: 5%;">
     <h1>SIMPLE COUNTDOWN</h1>
- 
-    <button (click)="countdown.resume()" button (click)="countdownresume()" ng-Model="myVar" class="button">START</button>
-    <h2 *ngIf="myVar">
-    <p>TIME REMAINING</p>
-    <countdown #countdown [config]="{leftTime: 30}"></countdown> <br>
-      <button (click)="countdown.pause()" class="button btn btn-link btn-sm">pause</button>
-      <button (click)="countdown.resume()" class="button btn btn-link btn-sm">resume</button>
-      <button (click)="countdown.restart()" button (click)="countdownresume()" class="button btn btn-link btn-sm">restart</button>
-    </h2>
+    <div>
+      <app-timer></app-timer>
+    </div>
   </div>
-</body>
+</div>

@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CountdownModule } from 'ngx-countdown';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TimerComponent } from './timer/timer.component';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimerComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CountdownModule
   ],
   providers: [],
